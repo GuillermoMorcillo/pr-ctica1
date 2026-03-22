@@ -154,7 +154,7 @@ print('Objetivo:',target)
 cont_atts = df.columns[df.dtypes == 'int64']
 cont_atts = cont_atts.drop('fnlwgt')
 
-disc_atts = df.columns[df.dtypes == 'str'] 
+disc_atts = df.columns[df.dtypes == 'object'] 
 disc_atts = disc_atts.drop(target)
 
 print('Continuas:',cont_atts)
