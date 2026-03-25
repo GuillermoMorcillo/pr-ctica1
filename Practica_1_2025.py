@@ -842,7 +842,7 @@ class C45Classifier(BaseEstimator, ClassifierMixin):
             return nodo.is_leaf,self.laplace(N,n), nodo.class_count, nodo.class_value
         
         else: #Si tiene hijo hacemos llamada recursiva
-            print("No soy nodo hoja")
+            #print("No soy nodo hoja")
             children = nodo.children if nodo.is_num else list(nodo.cat_dict.values())
             poda = True
             child_errors=[]
